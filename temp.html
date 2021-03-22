@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동아 장터</title>
+  <script src="https://kit.fontawesome.com/fb91417825.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <style>
+    body{
+      margin:0;
+    }
+    .card {
+      margin-bottom: 10px;
+    }
+   .navbar{
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #263343;
+     padding : 8px 12px;
+   }
+   .navbar a{
+    text-decoration: none;
+     color:white;
+   }
+   .navbar_logo{
+     font-size: 24px;
+     color:white;
+   }
+   .navbar_logo i{
+     color:#d49466;
+   }
+   .navbar_menu{
+     display:flex;
+     list-style:none;
+     padding-left:0;
+     margin-bottom: 0;
+   }
+   .navbar_menu li{
+     padding: 8px 12px;
+   }
+   .navbar_menu li:hover,
+   .navbar_icons:hover {
+     background-color: #d49466;
+     border-radius: 4px;
+   }
+   .navbar_icons{
+     list-style:none;
+     color:white;
+     display: flex;
+     padding-left:0;
+     margin-bottom: 0;
+   }
+   .navbar_icons li{
+     padding:8px 12px;
+   }
+   .navbar_toggleBtn{
+       display:none;
+       position: absolute;
+       right:32px;
+       font-size:24px;
+       color:#d49466;
+     }
+   @media screen and (max-width:768px){
+     .navbar{
+       flex-direction: column;
+       align-items: flex-start;
+     }
+     .navbar_menu{
+      display:none;
+       flex-direction: column;
+       align-items: center;
+       width:100%;
+     }
+     .navbar_menu li{
+       width: 100%;
+       text-align: center;
+     }
+     .navbar_icons{
+      display:none;
+       justify-content: center;
+       width:100%;
+     }
+     .navbar_toggleBtn{
+       display:block;
+     }
+   }
+   .navbar_menu.active,
+   .navbar_icons.active{
+     display:flex;
+   }
+  </style>
+  <script src="vanila.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar_logo">
+      <i class="fas fa-user-tie"></i>
+      <a href="">DONGA 장터</a>
+    </div>
+    <ul class="navbar_menu">
+      <li><a href="">구입</a></li>
+      <li><a href="">물품판매</a></li>
+      <li><a href="">나눔</a></li>
+      <li><a href="">마이샵</a></li>
+    </ul>
+    <ul class="navbar_icons">
+     <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-facebook-f"></i></li>
+      </ul>
+      <a href=#" class="navbar_toggleBtn">
+        <i class="fas fa-bars"></i>
+      </a>
+  </nav>
+  <div class="col-8 offset-2 mt-3">
+  <form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-secondary" type="submit">검색</button>
+  </form>
+</div>
+  <main class="mt-3">
+    <div class="container">
+      <div class="row mb-3">
+      </div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="https://media.bunjang.co.kr/images/nocrop/550629562.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="https://media.bunjang.co.kr/images/nocrop/608489304.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.bunjang.co.kr/images/nocrop/608448048.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <h4>이번주 신뢰도 TOP 3 사용자</h4>
+        <div class="col-4">
+          <img class="bd-placeholder-img rounded-circle" src="https://doraimong.github.io/web2/images/person1.jpg" width="140" height="140"></img>
+          <h2>Name</h2>
+          <p>introduce</p>
+          <p><a class="btn btn-secondary" href="#">View More</a></p>
+        </div>
+        <div class="col-4">
+          <img class="bd-placeholder-img rounded-circle" src="https://doraimong.github.io/web2/images/person2.jpg" width="140" height="140"></img>
+          <h2>Name</h2>
+          <p>introduce</p>
+          <p><a class="btn btn-secondary" href="#">View More</a></p>
+        </div>
+        <div class="col-4">
+          <img class="bd-placeholder-img rounded-circle" src="https://doraimong.github.io/web2/images/person3.jpg" width="140" height="140"></img>
+          <h2>Name</h2>
+          <p>introduce</p>
+          <p><a class="btn btn-secondary" href="#">View More</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <div class="card border-0" style="width: 18rem; height:500px">
+            <a href="product_detail.html"><img src="https://www.pickby.co.kr/shop/data/goods/1558426029793m0.jpg?cache_ver=2021021601" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">새로운 밴드, 새로운 스타일, 밀레니즈 루프밴드</h5>
+              <p class="card-text">
+                <span class="badge bg-dark">전자제품</span>
+                <span class="badge bg-dark">스마트워치</span>
+                <span class="badge bg-dark">악세사리</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">구매하기</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">문의하기</button>
+                </div>
+                <small class="text-dark">￦181,500</small>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="col-xl-4 col-md-6">
+          <div class="card border-0" style="width: 18rem; height:500px">
+            <img src="http://earlyadopter.godohosting.com/goods_earlyadopter_godo_co_kr/146/1575958800618m0.jpg?cache_ver=2021021601" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">동안의 비결, 코이즈미 리프팅 케어</h5>
+              <p class="card-text">
+                <span class="badge bg-dark">패션/뷰티</span>
+                <span class="badge bg-dark">미용관리</span>
+                <span class="badge bg-dark">리프팅</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">구매하기</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">문의하기</button>
+                </div>
+                <small class="text-dark">￦49,000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="col-xl-4 col-md-6">
+          <div class="card border-0" style="width: 18rem; height:500px">
+            <img src="http://earlyadopter.godohosting.com/goods_earlyadopter_godo_co_kr/235/1591856246501m0.jpg?cache_ver=2021021601" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">3중 구조 일회용 마스크, 요이치 멜트브라운 필터 덴탈 부직포 일회용 마스크</h5>
+              <p class="card-text">
+                <span class="badge bg-dark">마스크</span>
+                <span class="badge bg-dark">MUST-HAVE</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">구매하기</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">문의하기</button>
+                </div>
+                <small class="text-dark">￦9,800</small>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="col-xl-4 col-md-6">
+          <div class="card border-0" style="width: 18rem; height:500px;">
+            <img src="http://earlyadopter.godohosting.com/goods_earlyadopter_godo_co_kr/162/1578368250170m0.jpg?cache_ver=202012274" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">K70 RGB MK.2 BROWN 기계식 게이밍 키보드 갈축</h5>
+              <p class="card-text">
+                <span class="badge bg-dark">전자제품</span>
+                <span class="badge bg-dark">컴퓨터</span>
+                <span class="badge bg-dark">악세사리</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">구매하기</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">문의하기</button>
+                </div>
+                <small class="text-dark">￦219,000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="col-xl-4 col-md-6">
+          <div class="card border-0" style="width: 18rem; height:500px">
+            <img src="http://earlyadopter.godohosting.com/goods_earlyadopter_godo_co_kr/224/1589848609891m0.jpg?cache_ver=202012274" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">로지텍 MX VERTICAL 인체공학 무선 마우스</h5>
+              <p class="card-text">
+                <span class="badge bg-dark">전자제품</span>
+                <span class="badge bg-dark">컴퓨터</span>
+                <span class="badge bg-dark">악세사리</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">구매하기</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">문의하기</button>
+                </div>
+                <small class="text-dark">￦119,000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="col-xl-4 col-md-6">
+          <div class="card border-0" style="width: 18rem; height:500px">
+            <img src="https://www.pickby.co.kr/shop/data/goods/1592533764579m0.jpg?cache_ver=202012274" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">벤큐 모니터 BenQ GW2480</h5>
+              <p class="card-text">
+                <span class="badge bg-dark">전자제품</span>
+                <span class="badge bg-dark">컴퓨터</span>
+                <span class="badge bg-dark">모니터</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">구매하기</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">문의하기</button>
+                </div>
+                <small class="text-dark">￦129,000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="card border-0" style="width: 18rem; height:500px">
+            <img src="http://image.yes24.com/momo/TopCate1904/MidCate004/190338759.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">쉽게 배우는 운영체제</h5>
+              <p class="card-text">
+                <span class="badge bg-dark">컴퓨터관련</span>
+                <span class="badge bg-dark">OS</span>
+                <span class="badge bg-dark">중고서적</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">구매하기</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">문의하기</button>
+                </div>
+                <small class="text-dark">￦10,800</small>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="col-xl-4 col-md-6">
+          <div class="card border-0" style="width: 18rem; height:500px">
+            <img src="https://www.pickby.co.kr/shop/data/goods/1583211255510m0.png?cache_ver=202012274" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">라인프렌즈 젤리빔 초미니 스마트 프로젝터 JB-100</h5>
+              <p class="card-text">
+                <span class="badge bg-dark">전자제품</span>
+                <span class="badge bg-dark">빔프로젝트</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">구매하기</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">문의하기</button>
+                </div>
+                <small class="text-dark">￦249,900</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-5 py-5 bg-dark">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+        <small class="d-block mb-3 text-muted">&copy; 2021 김대웅, 박종현</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Cool stuff</a></li>
+          <li><a class="link-secondary" href="#">Random feature</a></li>
+          <li><a class="link-secondary" href="#">Team feature</a></li>
+          <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+          <li><a class="link-secondary" href="#">Another one</a></li>
+          <li><a class="link-secondary" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Resource name</a></li>
+          <li><a class="link-secondary" href="#">Resource</a></li>
+          <li><a class="link-secondary" href="#">Another resource</a></li>
+          <li><a class="link-secondary" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Business</a></li>
+          <li><a class="link-secondary" href="#">Education</a></li>
+          <li><a class="link-secondary" href="#">Government</a></li>
+          <li><a class="link-secondary" href="#">Gaming</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Team</a></li>
+          <li><a class="link-secondary" href="#">Locations</a></li>
+          <li><a class="link-secondary" href="#">Privacy</a></li>
+          <li><a class="link-secondary" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
