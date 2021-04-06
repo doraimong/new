@@ -7,7 +7,8 @@
   <script src="https://kit.fontawesome.com/fb91417825.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <style>
-    body{
+    html,body{
+      height:100%;
       margin:0;
     }
     .card {
@@ -106,6 +107,7 @@
       <li><a href="">마이샵</a></li>
     </ul>
     <ul class="navbar_icons">
+      <li><input type="text" class="search"></li>
      <li><i class="fab fa-twitter"></i></li>
       <li><i class="fab fa-facebook-f"></i></li>
       </ul>
@@ -113,16 +115,8 @@
         <i class="fas fa-bars"></i>
       </a>
   </nav>
-  <div class="col-8 offset-2 mt-3">
-  <form class="d-flex">
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-secondary" type="submit">검색</button>
-  </form>
-</div>
   <main class="mt-3">
     <div class="container">
-      <div class="row mb-3">
-      </div>
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item">
@@ -136,30 +130,30 @@
           </div>
         </div>
       </div>
-      <div class="row my-5">
-        <h4>이번주 신뢰도 TOP 3 사용자</h4>
-        <div class="col-4">
-          <img class="bd-placeholder-img rounded-circle" src="https://doraimong.github.io/web2/images/person1.jpg" width="140" height="140"></img>
+      <div class="row">
+        <h2 class="text-center my-5">🚀 이번주 신뢰도 TOP3 사용자 🚀</h2>
+        <div class="col-4 text-center">
+          <img class="rounded-circle" src="https://doraimong.github.io/web2/images/person1.jpg" width="140" height="140"></img>
           <h2>Name</h2>
           <p>introduce</p>
           <p><a class="btn btn-secondary" href="#">View More</a></p>
         </div>
-        <div class="col-4">
-          <img class="bd-placeholder-img rounded-circle" src="https://doraimong.github.io/web2/images/person2.jpg" width="140" height="140"></img>
+        <div class="col-4 text-center">
+          <img class="rounded-circle" src="https://doraimong.github.io/web2/images/person2.jpg" width="140" height="140"></img>
           <h2>Name</h2>
           <p>introduce</p>
           <p><a class="btn btn-secondary" href="#">View More</a></p>
         </div>
-        <div class="col-4">
-          <img class="bd-placeholder-img rounded-circle" src="https://doraimong.github.io/web2/images/person3.jpg" width="140" height="140"></img>
+        <div class="col-4 text-center">
+          <img class="rounded-circle" src="https://doraimong.github.io/web2/images/person3.jpg" width="140" height="140"></img>
           <h2>Name</h2>
           <p>introduce</p>
           <p><a class="btn btn-secondary" href="#">View More</a></p>
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-4 col-md-6">
-          <div class="card border-0" style="width: 18rem; height:500px">
+        <div class="col-xl-4 col-md-6"> 
+          <div class="mx-auto mx-auto card border-0" style="width: 18rem; height:500px">
             <a href="product_detail.html"><img src="https://www.pickby.co.kr/shop/data/goods/1558426029793m0.jpg?cache_ver=2021021601" class="card-img-top" alt="..."></a>
             <div class="card-body">
               <h5 class="card-title">새로운 밴드, 새로운 스타일, 밀레니즈 루프밴드</h5>
@@ -179,7 +173,7 @@
           </div>
         </div>
        <div class="col-xl-4 col-md-6">
-          <div class="card border-0" style="width: 18rem; height:500px">
+          <div class="mx-auto card border-0" style="width: 18rem; height:500px">
             <img src="http://earlyadopter.godohosting.com/goods_earlyadopter_godo_co_kr/146/1575958800618m0.jpg?cache_ver=2021021601" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">동안의 비결, 코이즈미 리프팅 케어</h5>
@@ -199,7 +193,7 @@
           </div>
         </div>
        <div class="col-xl-4 col-md-6">
-          <div class="card border-0" style="width: 18rem; height:500px">
+          <div class="mx-auto card border-0" style="width: 18rem; height:500px">
             <img src="http://earlyadopter.godohosting.com/goods_earlyadopter_godo_co_kr/235/1591856246501m0.jpg?cache_ver=2021021601" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">3중 구조 일회용 마스크, 요이치 멜트브라운 필터 덴탈 부직포 일회용 마스크</h5>
@@ -218,7 +212,7 @@
           </div>
         </div>
        <div class="col-xl-4 col-md-6">
-          <div class="card border-0" style="width: 18rem; height:500px;">
+          <div class="mx-auto card border-0" style="width: 18rem; height:500px;">
             <img src="http://earlyadopter.godohosting.com/goods_earlyadopter_godo_co_kr/162/1578368250170m0.jpg?cache_ver=202012274" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">K70 RGB MK.2 BROWN 기계식 게이밍 키보드 갈축</h5>
@@ -238,7 +232,7 @@
           </div>
         </div>
        <div class="col-xl-4 col-md-6">
-          <div class="card border-0" style="width: 18rem; height:500px">
+          <div class="mx-auto card border-0" style="width: 18rem; height:500px;">
             <img src="http://earlyadopter.godohosting.com/goods_earlyadopter_godo_co_kr/224/1589848609891m0.jpg?cache_ver=202012274" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">로지텍 MX VERTICAL 인체공학 무선 마우스</h5>
@@ -258,7 +252,7 @@
           </div>
         </div>
        <div class="col-xl-4 col-md-6">
-          <div class="card border-0" style="width: 18rem; height:500px">
+          <div class="mx-auto card border-0" style="width: 18rem; height:500px">
             <img src="https://www.pickby.co.kr/shop/data/goods/1592533764579m0.jpg?cache_ver=202012274" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">벤큐 모니터 BenQ GW2480</h5>
@@ -278,7 +272,7 @@
           </div>
         </div>
         <div class="col-xl-4 col-md-6">
-          <div class="card border-0" style="width: 18rem; height:500px">
+          <div class="mx-auto card border-0" style="width: 18rem; height:500px">
             <img src="http://image.yes24.com/momo/TopCate1904/MidCate004/190338759.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">쉽게 배우는 운영체제</h5>
@@ -298,7 +292,7 @@
           </div>
         </div>
        <div class="col-xl-4 col-md-6">
-          <div class="card border-0" style="width: 18rem; height:500px">
+          <div class="mx-auto card border-0" style="width: 18rem; height:500px">
             <img src="https://www.pickby.co.kr/shop/data/goods/1583211255510m0.png?cache_ver=202012274" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">라인프렌즈 젤리빔 초미니 스마트 프로젝터 JB-100</h5>
